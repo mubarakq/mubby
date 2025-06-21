@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- refreshing the site after 5secods -->
+    <!-- <meta http-equiv="refresh" content="7"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/onload.css">
+    <title>Document</title>
+</head>     
+<body>
+    <!-- starting with nav section -->
+    <nav class="navbar">
+               <a href="" class="logo">MUBBY</a>
+               <input type="checkbox" name="" id="active">
+            </div>
+            <label for="active" class="overlay"></label>
+            <ul class="nav-links">
+                <label for="active" class="active-close active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <div class="left">
+                <a href="#register" class="register">Book Now</a>
+                <label for="active"  class="active-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-120v-60h720v60H120Zm0-240v-60h720v60H120Zm0-240v-60h720v60H120Z"/></svg>
+                </label>
+            </div>
+    </nav>
+    <!-- ending with nav section -->
+
+    <!-- hero section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2><i>Welcome To</i><span class="text">MUBBY DESIGN</span></h2>
+            <p>We are a team of talented designers making stuning and captivating websites which brings Organic Traffic and High Sales</p>
+        </div>
+        <div class="hero-image">
+            <img src="img/design.jpg" alt="Hero Image">
+            <div class="hero-text2">
+                <h2><i>Welcome To</i><span class="text">MUBBY DESIGN</span></h2>
+                <p>We are a team of talented designers making stuning and captivating websites which brings Organic Traffic and High Sales</p>
+            </div>
+            <div class="frame"></div>
+        </div>
+    </section>
+    <!-- ending with hero section -->
+    <!-- begining of services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div class="service-card fade_up">
+                <div class="service-img">
+                    <img src="img/designs.jpg" alt="Web Design" width="100px">
+                </div>
+                <h3>Web Design</h3>
+                <p>We create stunning and responsive websites that are user-friendly and visually appealing.</p>
+            </div>
+            <div class="service-card fade_up">
+                <div class="service-img">
+                    <img src="img/brand.jpg" alt="Graphic Design" width="100px">
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Our graphic design services include logo design, branding, and marketing materials.</p>
+            </div>
+            <div class="service-card fade_up">
+                <div class="service-img">
+                    <img src="img/seoTool.jpg" alt="SEO Services" width="100px">
+                </div>
+                <h3>SEO Services</h3>
+                <p>We optimize your website to rank higher on search engines and drive organic traffic.</p>
+            </div>
+            <div class="service-card fade_up">
+                <div class="service-img">
+                    <img src="img/maintain.jpg" alt="SEO Services" width="100px">
+                </div>
+                <h3>Maintenance</h3>
+                <p>We provide ongoing support and maintenance to ensure your website runs smoothly and stays up-to-date.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ending of services -->
+    
+    <!-- begining of awaremess -->
+     <section class="services2">
+        <div class="service-card2 scroll_fade">
+            <h2>Why Me?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga iusto nobis nihil inventore ullam reiciendis, eveniet nulla, numquam laborum quae dolores soluta ut totam quia delectus fugiat, libero asperiores?</p>
+        </div>
+     </section>
+
+    <!-- begining of contact section -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Reach out with any questions or inquiries.</p>
+            <p>Don't forget to check the box to receive our latest updates.</p>
+        </div>
+        <div class="form">
+              <form action="https://formspree.io/f/xjvowzqk" method="POST">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>   
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write a message" max="200"    maxlength="200" ></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="sub" name="sub" value="yes">
+                    <label for="sub">Subscribe to our newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- ending of contact section -->
+     <script src="js/script.js"></script>
+</body>
+</html>

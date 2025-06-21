@@ -1,0 +1,480 @@
+/* setting color variables */
+:root {
+    --primary-color: #1a73e8; /* blue color */
+    --secondary-color: #fbbc05; /* yellow color */
+    --background-color: #f1f3f4; /* light gray color */
+    --unviversal : #ffffff;
+    --text-color: #080c19; /* dark gray color */
+}
+/* styles for all element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fade_up 0.5s ease-in-out;
+}
+
+@keyframes fade_up {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* style for html */
+html{
+    font-size: 62.55%; /* 1rem = 10px */
+    scroll-behavior: smooth; /* smooth scrolling */
+}
+/* styles for body element */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+/* styles for heading */
+h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+}
+/* styles for nav element */
+nav{
+    width: 100%;
+    display: flex;
+    padding: 1rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a73e8;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#active, .active-close, .active-open{
+    display: none;
+}
+.overlay{
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    /* padding: 1rem; */
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+nav li a:hover {
+    color: var(--secondary-color);
+}
+.register{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.register:hover {
+    background-color: #fcce44; /* dark orange color */
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+     min-height: 60vh;
+    background-color: var(--background-color);
+    text-align: center;
+}
+.hero-text{
+    background-image: url('../img/cut.png');
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+/* styles for hero text */
+.hero-text h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: left;
+}
+.hero-text h2 span {
+    color: var(--primary-color);
+    font-size: 5rem;
+    display: block;
+}
+.hero-text p {
+    width: 85%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+
+}
+.hero-text2{
+    display: none;
+}
+/* styles for hero section */
+.hero-image {
+    flex: 50%;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+}
+/* styles for hero image */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* styles for Services section */
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 4rem;
+    background-color: var(--background-color);
+}
+/* styles for services heading */
+.services h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* styles for services card */
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+/* styles for services card */
+.service-box .service-card {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-img img{
+    width: 100%;
+    height: 100%;
+}
+/* styles for services card heading */
+.service-card h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+/* styles for services card text */
+.service-card p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+/* ending of service */
+
+.services2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 4rem;
+    background-color: var(--background-color);
+
+}
+.service-card2{
+       background-color: #fcce44;
+       padding: 4rem 2rem;
+}
+.service-card2 p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+/* begining of contact */
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 3rem 3rem;
+    background-color: var(--primary-color);
+}
+.contact-text {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+}
+.form{
+    flex: 40%;
+    /* padding: 2.5rem; */
+}
+.contact-text h2 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: left;
+}
+.contact-text p {
+    /* width: 85%; */
+    font-size: 1.8rem;
+    color: var(--background-color);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+/* styles for contact form */
+
+form {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+form h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 1rem 0;
+    text-align: left;
+}
+/* styles for contact form */
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 1.5rem;
+    color: var(--background-color);
+    font-weight: 600;
+}
+input[type="email"],input[type="text"], textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 8px 0;
+    resize: none;
+}
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+    border: 1.5px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+input[type="email"]::placeholder, input[type="text"]::placeholder, textarea::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    display: inline-block;
+    padding: 1rem 0;
+}
+button {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    background-color: #fcce44; /* dark orange color */
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media screen and (max-width:900px) {
+/* nav bar style */
+.nav-links{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    z-index: 20;
+    display: block;
+    width: 260px;
+    background-color: #ffffff15;
+    backdrop-filter: blur(10px);
+    height: 100dvh;
+    transition: all 0.5s ease;
+}
+.nav-links li a{
+    color: var(--text-color);
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.nav-links li a:hover{
+    color: #242e4d;
+    text-shadow: 0 2px 21px #242e4d;
+}
+.active-open{
+    display: inline-block;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.active-open svg{
+    fill: white;
+}
+.register{
+    margin-right: 10px;
+}
+.active-close{
+    display: block;
+    padding: 1rem;
+}
+
+#active:checked ~ .nav-links{
+    right: 0;
+    transition: all 0.5s ease;
+}
+#active:checked ~ .overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.178);
+    z-index: 11;
+    display: block;
+}
+
+.hero-text .text{
+    font-size: 4rem;
+}
+}
+
+
+@media screen  and (max-width:760px) {
+    #home{
+    display: block;
+}
+.hero {
+    flex-direction: column;
+    height: auto;
+
+}
+.hero-text{
+    display: none;
+}
+.hero-text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10%;
+    left: 3rem;
+    text-align: left;
+    z-index: 10;
+}
+.hero-text2 h2{
+    text-align: left;
+    font-size: 3rem;
+    color: #f1f3f4;
+    /* text-shadow: 0 2px 2px white; */
+}
+.hero-text2 .text{
+   display: block;
+    font-size: 4rem;
+   color: var(--secondary-color);
+}
+.hero-text2 p{
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    color: #ffffff;
+    width: 60%;
+}
+.hero-image{
+    position: relative;
+    text-align: left;
+}
+.frame{
+    display: block;
+    width: 100%;
+    height: 50dvh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-image: linear-gradient(to top, rgb(18, 16, 16)20%, rgba(255, 255, 255, 0));
+}
+.contact{
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    width: 100%;
+}
+.contact-text{
+    width: 100%;
+}
+.nav-links{
+     width: 60%;
+}
+}
+@media screen and (min-width: 901px) {
+    .hero,
+    .hero-image,
+    .hero-text {
+       min-height: 35vh;
+        height: 100dvh;
+    }
+}

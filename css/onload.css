@@ -1,0 +1,89 @@
+.auto_rotate{
+   animation: AutoRotate;
+   animation-timeline: view(); 
+}
+@keyframes AutoRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scroll_fade {
+  animation: ScrollFade both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50vh;
+}
+
+@keyframes ScrollFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image_review{
+    animation: ImageReview both;
+    animation-timeline: view(50% 20%);
+    animation-range: entry 20% cover 100vh;
+}
+@keyframes ImageReview {
+  from {
+   filter: saturate(0) contrast(4) brightness(0.1) blur(5px);
+   opacity: 0;
+   scale: 0.8;
+   translate: 0 4rem;
+  }
+  to {
+    filter: none;
+   opacity: 1;
+   scale: 1;
+   translate: 0 0;
+  }
+}
+
+.fade_up{
+    animation: FadeUp both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+@keyframes FadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.blur{
+    animation: Blur linear both;
+    animation-timeline: view(50% auto);
+    animation-range: entry 20% cover 100vh;
+}
+@keyframes Blur {
+ 0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  35%, 50% {
+    filter: blur(0);
+    opacity: 0.5;
+  }
+    70%, 85% {
+        filter: blur(20px);
+        opacity: 0.8;
+    }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
