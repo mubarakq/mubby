@@ -1,0 +1,2 @@
+# mubby
+freestyle page
