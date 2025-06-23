@@ -175,8 +175,8 @@ nav li a:hover {
 
 #home{
     width: 100%;
-    height: 100dvh;
-    max-height: 40dvh;
+    height: 50dvh;
+    max-height: 100dvh;
     /* background-color: #fcce44; */ /* light yellow color */
     display: flex;
 }
