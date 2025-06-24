@@ -225,6 +225,9 @@ nav li a:hover {
    display: none;
 }
 @media screen and (max-width: 900px) {
+    #home{
+    max-height: 100dvh;
+}
     .hero-text{
         display: none;
     }
